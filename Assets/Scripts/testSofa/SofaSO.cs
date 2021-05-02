@@ -11,7 +11,7 @@ public class SofaSO : MonoBehaviour
     }
 
     void setSO(){
-        gameObject.transform.Translate(0.8f, 0, -1.3f);
+        gameObject.transform.Translate(1.3f, 0, -1.3f);
     }
 
 
