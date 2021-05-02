@@ -8,7 +8,7 @@ public class CebraPlanta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setNE(); 
+        setNO(); 
     }
 
     void center(){
