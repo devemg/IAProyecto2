@@ -9,25 +9,27 @@ public class CebraMesa : MonoBehaviour
     {
         setNO();
     }
-    
-    void setNE() {
-        gameObject.transform.Translate(1.2f, 0,-1.026f);        
-    }
-
-    void setNO(){
-        gameObject.transform.Translate(0f, 0, 0f);
-    }
-
-    void setSE(){
-        gameObject.transform.Translate(1.219f, 0, 1.244f);
-    }
-
-    void setSO(){
-        gameObject.transform.Translate(-6f, 0, 0f);
-    }
 
     void center(){
         gameObject.transform.Translate(0, 0, 0);
+    }
+
+    void setNE() {
+        gameObject.transform.Translate(-1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
+    }
+
+    void setNO(){
+        gameObject.transform.Translate(1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
+    }
+
+    void setSE(){
+        gameObject.transform.Translate(-1.3f, 0, -1.3f);
+    }
+
+    void setSO(){
+        gameObject.transform.Translate(1.3f, 0, -1.3f);
     }
 
 
