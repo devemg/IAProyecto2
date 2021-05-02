@@ -19,7 +19,7 @@ public class SofaSE : MonoBehaviour
     }
 
     void setSE(){
-        gameObject.transform.Translate(1.7f, 0, 2.5f);
+        gameObject.transform.Translate(-0.72f, 0, -1.175f);
         gameObject.transform.Rotate(0, 180f, 0);
     }
 

@@ -29,7 +29,7 @@ public class SofaC : MonoBehaviour
     }
 
     void center(){
-        gameObject.transform.Translate(-0.2f, 0, 0.5f);
+        gameObject.transform.Translate(0.5f, 0, -0.6f);
     }
 
     // Update is called once per frame
