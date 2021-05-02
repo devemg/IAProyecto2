@@ -10,25 +10,28 @@ public class CebraLampara : MonoBehaviour
         setSE();
     }
 
+     void center(){
+        gameObject.transform.Translate(0, 0, 0);
+    }
+
     void setNE() {
-        gameObject.transform.Translate(1.35f, 0,-1.26f);        
+        gameObject.transform.Translate(-1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
     }
 
     void setNO(){
-        gameObject.transform.Translate(-1.26f, 0, -1.26f);
+        gameObject.transform.Translate(1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
     }
 
     void setSE(){
-        gameObject.transform.Translate(1.404f, 0, 1.38f);
+        gameObject.transform.Translate(-1.3f, 0, -1.3f);
     }
 
     void setSO(){
-        gameObject.transform.Translate(-1.26f, 0, 1.402f);
+        gameObject.transform.Translate(1.3f, 0, -1.3f);
     }
 
-    void center(){
-        gameObject.transform.Translate(0, 0, 0);
-    }
 
     // Update is called once per frame
     void Update()
