@@ -7,7 +7,7 @@ public class CebraSilla : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setNE();
+        setNO();
     }
     void center(){
         gameObject.transform.Translate(0, 0, 0);
