@@ -7,7 +7,7 @@ public class CebraMesa : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        center();
+        setNO();
     }
     
     void setNE() {
@@ -15,7 +15,7 @@ public class CebraMesa : MonoBehaviour
     }
 
     void setNO(){
-        gameObject.transform.Translate(-1.2f, 0, -1.017f);
+        gameObject.transform.Translate(0f, 0, 0f);
     }
 
     void setSE(){
@@ -23,12 +23,13 @@ public class CebraMesa : MonoBehaviour
     }
 
     void setSO(){
-        gameObject.transform.Translate(-1.62f, 0, 1.244f);
+        gameObject.transform.Translate(-6f, 0, 0f);
     }
 
     void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
+
 
     // Update is called once per frame
     void Update()

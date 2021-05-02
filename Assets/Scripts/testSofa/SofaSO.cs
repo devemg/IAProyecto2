@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CebraSofa : MonoBehaviour
+public class SofaSO : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        setNE();
+        setSO();
     }
 
     void setNE() {
