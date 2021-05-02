@@ -11,7 +11,7 @@ public class SofaSE : MonoBehaviour
     }
 
     void setSE(){
-        gameObject.transform.Translate(-0.7f, 0, -1.3f);
+        gameObject.transform.Translate(-1.3f, 0, -1.3f);
     }
 
     // Update is called once per frame

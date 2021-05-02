@@ -10,7 +10,7 @@ public class SofaNO : MonoBehaviour
         setNO();
     }
     void setNO(){
-        gameObject.transform.Translate(0.8f, 0, 1.3f);
+        gameObject.transform.Translate(1.3f, 0, 1.3f);
         gameObject.transform.Rotate(0, 180f, 0);
     }
 
