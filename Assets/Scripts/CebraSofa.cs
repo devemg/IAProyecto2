@@ -7,7 +7,7 @@ public class CebraSofa : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setSO();
+        setSE();
     }
 
    void setNE() {
