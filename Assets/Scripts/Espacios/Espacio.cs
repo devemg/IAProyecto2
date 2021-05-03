@@ -25,10 +25,10 @@ public class Espacio
     EspacioPos posLampara = EspacioPos.NULL; 
     EspacioPos posSofa = EspacioPos.NULL; 
 
-    Piso piso = Piso.NULL;
+    public Piso piso { get; set; }
     int error = 0;
-    public void setPiso(Piso pos){
-        piso = pos;
+    public Espacio() {
+        piso = Piso.NULL;
     }
 
     public void setSofa(EspacioPos indice){
