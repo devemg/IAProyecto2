@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
@@ -20,4 +21,11 @@ public class MenuPrincipal : MonoBehaviour
         Application.Quit();
     }
 
+    public void GoToVR(){
+        SceneManager.LoadScene("espacios");
+    }
+
+    public void BackMenu(){
+        SceneManager.LoadScene("Mainmenu");
+    }
 }
