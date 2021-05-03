@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using UnityEngine;
 
 public enum EspacioPos {
     NE,
@@ -24,7 +26,7 @@ public class Espacio
     EspacioPos posSofa = EspacioPos.NULL; 
 
     Piso piso = Piso.NULL;
-
+    int error = 0;
     public void setPiso(Piso pos){
         piso = pos;
     }
@@ -58,4 +60,18 @@ public class Espacio
         posSofa != EspacioPos.NULL && 
         piso != Piso.NULL;
     }
+
+    public bool isNotRepeat(){
+        return error == 0;
+    }
+
+    public void showPos(){
+       Debug.Log("PISO: "+piso.ToString());
+       Debug.Log("mesa: "+posMesa.ToString());
+       Debug.Log("silla"+posSilla.ToString());
+       Debug.Log("sofa"+posSofa.ToString());
+       Debug.Log("planta"+posPlanta.ToString());
+       Debug.Log("lampara"+posLampara.ToString());
+    }
+
 }
