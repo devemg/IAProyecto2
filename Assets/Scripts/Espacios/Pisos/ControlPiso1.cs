@@ -8,7 +8,7 @@ public class ControlPiso1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         if(Game.Instance.ExistePiso(Piso.PISO1)){
             Espacio espacio = Game.Instance.getEspacio(Piso.PISO1);
             // posicionando objetos

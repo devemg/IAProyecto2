@@ -21,6 +21,23 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Espacio nespacio = new Espacio();
+        nespacio.piso = Piso.PISO1; 
+        nespacio.posLampara = EspacioPos.NO;
+        nespacio.posMesa = EspacioPos.NE; 
+        nespacio.posPlanta =  EspacioPos.SO;
+        nespacio.posSilla = EspacioPos.SE; 
+        nespacio.posSofa = EspacioPos.CENTER; 
+        Game.Instance.Espacios.Add(nespacio);
+
+        nespacio = new Espacio();
+        nespacio.piso = Piso.PISO2; 
+        nespacio.posLampara = EspacioPos.CENTER;
+        nespacio.posMesa = EspacioPos.SE; 
+        nespacio.posPlanta =  EspacioPos.NE;
+        nespacio.posSilla = EspacioPos.NO; 
+        nespacio.posSofa = EspacioPos.SO; 
+        Game.Instance.Espacios.Add(nespacio);
     }
 
     // Update is called once per frame
