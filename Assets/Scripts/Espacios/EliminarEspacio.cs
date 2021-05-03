@@ -16,6 +16,12 @@ public class EliminarEspacio : MonoBehaviour
         
     }
 
+    public void EliminarPisoCebra(){
+        Game.Instance.EliminarEspacio(Piso.CEBRA);
+         gameObject.transform.Find("cebra").gameObject.SetActive(false);
+         MessageBox.Instance.setMessage("Piso eliminado").Show();
+    }
+
     void OnEnable()
     {
         if(Game.Instance.ExistePiso(Piso.CEBRA)){

@@ -7,6 +7,8 @@ public class Game : MonoBehaviour
 
     public static Game Instance; 
     public ArrayList Espacios = new ArrayList();
+    List<string> log = new List<string>();
+
     private void Awake(){
         if(Instance == null){
             DontDestroyOnLoad(gameObject);
@@ -20,7 +22,7 @@ public class Game : MonoBehaviour
     void Start()
     {
         Debug.Log("Creando Global...");
-        /*Espacio cebra = new Espacio();
+        Espacio cebra = new Espacio();
         cebra.piso = Piso.CEBRA; 
 
         cebra.posMesa = EspacioPos.NO;
@@ -30,7 +32,7 @@ public class Game : MonoBehaviour
         cebra.posSofa = EspacioPos.SE;
 
         Espacios.Add(cebra);
-        Debug.Log(Espacios.Count);*/
+        Debug.Log(Espacios.Count);
     }
 
     // Update is called once per frame
@@ -80,6 +82,19 @@ public class Game : MonoBehaviour
             }
         }
         return null;
+    }
+    
+    public void addLogAction(string content){
+        log.Add("[ACCION] "+content);
+    }
+
+    public void addLogError(string content){
+        log.Add("[ERROR] "+content);
+    }
+
+    public void genLog(string path){
+        //StreamReader Leer;
+        //StreamWriter Escribir;
     }
 
 }
