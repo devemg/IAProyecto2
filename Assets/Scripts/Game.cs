@@ -37,4 +37,23 @@ public class Game : MonoBehaviour
         }
         return false;
     }
+
+    public void EliminarEspacio(Piso piso){
+         foreach(Espacio espacio in Game.Instance.Espacios){
+            if(espacio.piso.Equals(piso)){
+                Game.Instance.Espacios.Remove(espacio);
+                break;
+            }
+        }
+    }
+
+    public void EditarEspacio(Piso piso, Espacio eEspacio){
+         foreach(Espacio espacio in Game.Instance.Espacios){
+            if(espacio.piso.Equals(piso)){
+                espacio = eEspacio;
+                break;
+            }
+        }
+    }
+
 }
