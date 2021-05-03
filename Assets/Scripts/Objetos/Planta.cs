@@ -5,6 +5,7 @@ using UnityEngine;
 public class Planta : MonoBehaviour
 {
 
+    private bool showObject;
     public void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
@@ -25,15 +26,22 @@ public class Planta : MonoBehaviour
         gameObject.transform.Translate(1.3f, 0, -1.3f);
     }
     
+    public void show(){
+        showObject = true;
+    }
+
+    public void hide(){
+       showObject = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.SetActive(showObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

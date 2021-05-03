@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class ControlCebra : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
+        GetPlanta().show();
         GetPlanta().setSE();
+
+        
         GetMesa().center();
         GetSilla().setSO();
         GetLampara().setNO();
         GetSofa().setNE();
+        
     }
 
     // Update is called once per frame

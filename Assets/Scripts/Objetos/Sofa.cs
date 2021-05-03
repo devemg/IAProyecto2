@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sofa : MonoBehaviour
 {
+    private bool showObject;
     public void setNE() {
         gameObject.transform.Translate(-0.7f, 0, 1.3f);
         gameObject.transform.Rotate(0, 180f, 0);
@@ -25,11 +26,18 @@ public class Sofa : MonoBehaviour
     public void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
+    public void show(){
+        showObject = true;
+    }
+
+    public void hide(){
+       showObject = false;
+    }
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.SetActive(showObject);
     }
 
     // Update is called once per frame
