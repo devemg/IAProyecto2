@@ -29,15 +29,16 @@ public class Game : MonoBehaviour
         nespacio.posSilla = EspacioPos.SE; 
         nespacio.posSofa = EspacioPos.CENTER; 
         Game.Instance.Espacios.Add(nespacio);
-
-        nespacio = new Espacio();
-        nespacio.piso = Piso.PISO2; 
-        nespacio.posLampara = EspacioPos.CENTER;
-        nespacio.posMesa = EspacioPos.SE; 
-        nespacio.posPlanta =  EspacioPos.NE;
-        nespacio.posSilla = EspacioPos.NO; 
-        nespacio.posSofa = EspacioPos.SO; 
-        Game.Instance.Espacios.Add(nespacio);
+        Debug.Log(Espacios.Count);
+        Espacio enespacio = new Espacio();
+        enespacio.piso = Piso.PISO2; 
+        enespacio.posLampara = EspacioPos.CENTER;
+        enespacio.posMesa = EspacioPos.SE; 
+        enespacio.posPlanta =  EspacioPos.NE;
+        enespacio.posSilla = EspacioPos.NO; 
+        enespacio.posSofa = EspacioPos.SO; 
+        Game.Instance.Espacios.Add(enespacio);
+        Debug.Log(Espacios.Count);
     }
 
     // Update is called once per frame

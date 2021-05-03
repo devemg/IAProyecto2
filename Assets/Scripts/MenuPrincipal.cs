@@ -22,7 +22,7 @@ public class MenuPrincipal : MonoBehaviour
     }
 
     public void GoToVR(){
-        SceneManager.LoadScene("espacios");
+        SceneManager.LoadScene("Spaces");
     }
 
     public void BackMenu(){

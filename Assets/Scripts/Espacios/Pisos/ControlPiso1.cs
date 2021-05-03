@@ -18,6 +18,7 @@ public class ControlPiso1 : MonoBehaviour
             GetMesa().setPosition(espacio.posMesa);
             GetSilla().setPosition(espacio.posSilla);
         }else {
+            Debug.LogError("NO EXISTE PISO 1");
             gameObject.SetActive(false);
         }
         

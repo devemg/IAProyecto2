@@ -9,7 +9,7 @@ public class ControlPiso2 : MonoBehaviour
     void Start()
     {
         
-        if(Game.Instance.ExistePiso(Piso.PISO2)){
+      //  if(Game.Instance.ExistePiso(Piso.PISO2)){
             Espacio espacio = Game.Instance.getEspacio(Piso.PISO2);
             // posicionando objetos
             GetPlanta().setPosition(espacio.posPlanta);
@@ -17,9 +17,10 @@ public class ControlPiso2 : MonoBehaviour
             GetLampara().setPosition(espacio.posLampara);
             GetMesa().setPosition(espacio.posMesa);
             GetSilla().setPosition(espacio.posSilla);
-        }else {
-            gameObject.SetActive(false);
-        }
+      //  }else {
+      //      Debug.LogError("NO EXISTE PISO 2");
+           // gameObject.SetActive(false);
+     //   }
         
     }
 
@@ -29,28 +30,28 @@ public class ControlPiso2 : MonoBehaviour
         
     }
     public Mesa GetMesa() {
-        GameObject mesa = GameObject.Find("mesa");
+        GameObject mesa = GameObject.Find("mesa1");
         return (Mesa) mesa.GetComponent(typeof(Mesa));
     }
 
     public Silla GetSilla() {
-        GameObject silla = GameObject.Find("silla");
+        GameObject silla = GameObject.Find("silla1");
         return (Silla) silla.GetComponent(typeof(Silla));
     }
 
     public Lampara GetLampara(){
-        GameObject lamp = GameObject.Find("lampara");
+        GameObject lamp = GameObject.Find("lampara1");
         return (Lampara) lamp.GetComponent(typeof(Lampara));
     }
 
     public Sofa GetSofa(){
-        GameObject sillon = GameObject.Find("sofa");
+        GameObject sillon = GameObject.Find("sofa1");
         return (Sofa) sillon.GetComponent(typeof(Sofa));
         
     }
 
     public Planta GetPlanta() {
-        GameObject planta = GameObject.Find("planta");
+        GameObject planta = GameObject.Find("planta1");
         return (Planta) planta.GetComponent(typeof(Planta));
     }
 }
