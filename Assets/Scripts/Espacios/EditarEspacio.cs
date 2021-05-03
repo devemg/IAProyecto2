@@ -21,15 +21,23 @@ public class EditarEspacio : MonoBehaviour
 
     void OnEnable()
     {
-        if(Game.Instance.ExistePiso(Piso.CEBRA)){
-            Debug.Log("EXISTE CEBRA");
-            gameObject.transform.Find("cebra").gameObject.SetActive(true);
+        if(Game.Instance.ExistePiso(Piso.PISO1)){
+            gameObject.transform.Find("piso1").gameObject.SetActive(true);
         }
-
-       /* Transform result;
-        result = gameObject.transform.Find("cebra");
-            if(result) {
-                result.gameObject.SetActive(true);
-        }*/
+        if(Game.Instance.ExistePiso(Piso.PISO2)){
+            gameObject.transform.Find("piso2").gameObject.SetActive(true);
+        }
+        if(Game.Instance.ExistePiso(Piso.PISO3)){
+            gameObject.transform.Find("piso3").gameObject.SetActive(true);
+        }
+        if(Game.Instance.ExistePiso(Piso.PISO4)){
+            gameObject.transform.Find("piso4").gameObject.SetActive(true);
+        }
+        if(Game.Instance.ExistePiso(Piso.PISO5)){
+            gameObject.transform.Find("piso5").gameObject.SetActive(true);
+        }
+        if(Game.Instance.ExistePiso(Piso.PISO6)){
+            gameObject.transform.Find("piso6").gameObject.SetActive(true);
+        }
     }
 }

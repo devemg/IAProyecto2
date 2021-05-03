@@ -13,8 +13,12 @@ public enum EspacioPos {
 }
 
 public enum Piso {
-    CEBRA,
-    JIRAFA,
+    PISO1,
+    PISO2,
+    PISO3,
+    PISO4,
+    PISO5,
+    PISO6,
      NULL
 }
 public class Espacio

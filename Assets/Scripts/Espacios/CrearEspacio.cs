@@ -86,8 +86,12 @@ public class CrearEspacio : MonoBehaviour
     Piso GetPiso(int indice){
         Debug.Log(indice);
         switch(indice) {
-            case 1: return Piso.CEBRA;
-            case 2: return Piso.JIRAFA;
+            case 1: return Piso.PISO1;
+            case 2: return Piso.PISO2;
+            case 3: return Piso.PISO3;
+            case 4: return Piso.PISO4;
+            case 5: return Piso.PISO5;
+            case 6: return Piso.PISO6;
             default: return Piso.NULL;
         }
     }

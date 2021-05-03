@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlCebra : MonoBehaviour
+public class ControlPiso5 : MonoBehaviour
 {
 
     // Start is called before the first frame update
     void Start()
     {
         
-        if(Game.Instance.ExistePiso(Piso.CEBRA)){
-            Espacio espacio = Game.Instance.getEspacio(Piso.CEBRA);
+        if(Game.Instance.ExistePiso(Piso.PISO5)){
+            Espacio espacio = Game.Instance.getEspacio(Piso.PISO5);
             // posicionando objetos
             GetPlanta().setPosition(espacio.posPlanta);
             GetSofa().setPosition(espacio.posSofa);
