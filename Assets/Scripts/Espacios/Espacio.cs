@@ -26,7 +26,6 @@ public class Espacio
     public EspacioPos posSofa { get; set; }
 
     public Piso piso { get; set; }
-    int error = 0;
     public Espacio() {
         piso = Piso.NULL;
         posSofa  = EspacioPos.NULL; 
@@ -47,7 +46,32 @@ public class Espacio
     }
 
     public bool isNotRepeat(){
-        return error == 0;
+        return 
+        posLampara != posSofa && 
+        posLampara != posPlanta &&
+        posLampara != posSilla &&
+        posLampara != posMesa && 
+
+        posSofa != posPlanta && 
+        posSofa != posLampara &&
+        posSofa != posSilla &&
+        posSofa != posMesa && 
+        
+        posMesa != posPlanta && 
+        posMesa != posLampara &&
+        posMesa != posSilla &&
+        posMesa != posSofa && 
+
+        posSilla != posPlanta && 
+        posSilla != posLampara &&
+        posSilla != posMesa &&
+        posSilla != posSofa && 
+
+        posPlanta != posSilla && 
+        posPlanta != posLampara &&
+        posPlanta != posMesa &&
+        posPlanta != posSofa 
+        ;
     }
 
     public void showPos(){

@@ -19,25 +19,30 @@ public class CrearEspacio : MonoBehaviour
 
     public void crear(){
          if(espacioActual.isNotNull()){
-           // if(espacioActual.isNotRepeat()) {
-          //  Debug.Log("creando...");
+            if(espacioActual.isNotRepeat()) {
+            Debug.Log("creando...");
                 if(Game.Instance.Espacios.Count < 6) {
                     if(!Game.Instance.ExistePiso(espacioActual.piso)){
                         Game.Instance.Espacios.Add(espacioActual);
                         MessageBox.Instance.setMessage("¡Espacio creado!").Show(); 
                         Debug.Log(Game.Instance.Espacios.Count); 
                         espacioActual = CopiarEspacio();
+                        Game.Instance.addLogAction("Se ha creado un espacio");
                     }else{
                         MessageBox.Instance.setError("El piso ya existe.").Show();
+                        Game.Instance.addLogError("No se puede crear el espacio, el piso ya existe");
                     }
                 }else {
                     MessageBox.Instance.setError("Ya existen 6 espacios").Show();
+                    Game.Instance.addLogError("No se puede crear el espacio, ya existen 6 espacios");
                 }
-           // }else {
-           //     Debug.Log("posiciones repetidas");
-           // }
+            }else {
+                MessageBox.Instance.setError("No se pueden repetir espacios y muebles").Show();
+                Game.Instance.addLogError("No se pueden repetir espacios y muebles.");
+            }
         }else{  
             MessageBox.Instance.setError("Los elementos no están completos.").Show();
+            Game.Instance.addLogError("No se puede crear el espacio, los elementos no están completos");
         }
     }
 
