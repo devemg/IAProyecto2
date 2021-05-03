@@ -21,7 +21,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Creando Global...");
+        /*Debug.Log("Creando Global...");
         Espacio cebra = new Espacio();
         cebra.piso = Piso.CEBRA; 
 
@@ -32,7 +32,7 @@ public class Game : MonoBehaviour
         cebra.posSofa = EspacioPos.SE;
 
         Espacios.Add(cebra);
-        Debug.Log(Espacios.Count);
+        Debug.Log(Espacios.Count);*/
     }
 
     // Update is called once per frame

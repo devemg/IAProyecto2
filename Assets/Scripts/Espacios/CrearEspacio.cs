@@ -18,7 +18,6 @@ public class CrearEspacio : MonoBehaviour
     }
 
     public void crear(){
-        
          if(espacioActual.isNotNull()){
            // if(espacioActual.isNotRepeat()) {
           //  Debug.Log("creando...");
@@ -27,6 +26,7 @@ public class CrearEspacio : MonoBehaviour
                         Game.Instance.Espacios.Add(espacioActual);
                         MessageBox.Instance.setMessage("¡Espacio creado!").Show(); 
                         Debug.Log(Game.Instance.Espacios.Count); 
+                        espacioActual = CopiarEspacio();
                     }else{
                         MessageBox.Instance.setError("El piso ya existe.").Show();
                     }
@@ -85,5 +85,16 @@ public class CrearEspacio : MonoBehaviour
             case 2: return Piso.JIRAFA;
             default: return Piso.NULL;
         }
+    }
+
+    public Espacio CopiarEspacio() {
+        Espacio nuevoEspacio = new Espacio();
+        nuevoEspacio.piso = espacioActual.piso;
+        nuevoEspacio.posSofa  = espacioActual.posSofa; 
+        nuevoEspacio.posLampara  = espacioActual.posLampara; 
+        nuevoEspacio.posPlanta  = espacioActual.posPlanta; 
+        nuevoEspacio.posSilla  = espacioActual.posSilla; 
+        nuevoEspacio.posMesa  = espacioActual.posMesa; 
+        return nuevoEspacio;
     }
 }
