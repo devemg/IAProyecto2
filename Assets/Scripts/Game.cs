@@ -20,7 +20,7 @@ public class Game : MonoBehaviour
     void Start()
     {
         Debug.Log("Creando Global...");
-        Debug.Log(Game.Instance.Espacios.Count);
+        Debug.Log(Espacios.Count);
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class Game : MonoBehaviour
     }
 
     public bool ExistePiso(Piso piso) {
-        foreach(Espacio espacio in Game.Instance.Espacios){
+        foreach(Espacio espacio in Espacios){
             if(espacio.piso.Equals(piso)){
                 return true;
             }
@@ -39,20 +39,27 @@ public class Game : MonoBehaviour
     }
 
     public void EliminarEspacio(Piso piso){
-         foreach(Espacio espacio in Game.Instance.Espacios){
+         foreach(Espacio espacio in Espacios){
             if(espacio.piso.Equals(piso)){
-                Game.Instance.Espacios.Remove(espacio);
+                Espacios.Remove(espacio);
                 break;
             }
         }
     }
 
     public void EditarEspacio(Piso piso, Espacio eEspacio){
-         foreach(Espacio espacio in Game.Instance.Espacios){
+        int index = 0; 
+        bool existe = false;
+        foreach(Espacio espacio in Espacios){
             if(espacio.piso.Equals(piso)){
-                espacio = eEspacio;
+                existe = true;
                 break;
             }
+            index++;
+        }
+        //verificar
+        if(existe){
+            Espacios[index] = eEspacio;
         }
     }
 

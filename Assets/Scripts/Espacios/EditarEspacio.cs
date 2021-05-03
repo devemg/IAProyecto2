@@ -21,6 +21,11 @@ public class EditarEspacio : MonoBehaviour
 
     void OnEnable()
     {
+        if(Game.Instance.ExistePiso(Piso.CEBRA)){
+            Debug.Log("EXISTE CEBRA");
+            gameObject.transform.Find("cebra").gameObject.SetActive(true);
+        }
+
        /* Transform result;
         result = gameObject.transform.Find("cebra");
             if(result) {
