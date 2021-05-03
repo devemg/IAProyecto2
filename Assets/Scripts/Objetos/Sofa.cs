@@ -2,15 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CebraSofa : MonoBehaviour
+public class Sofa : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-   public void setNE() {
+    public void setNE() {
         gameObject.transform.Translate(-0.7f, 0, 1.3f);
         gameObject.transform.Rotate(0, 180f, 0);
     }
@@ -30,6 +24,12 @@ public class CebraSofa : MonoBehaviour
 
     public void center(){
         gameObject.transform.Translate(0, 0, 0);
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame

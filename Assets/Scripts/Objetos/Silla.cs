@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CebraSilla : MonoBehaviour
+public class Silla : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+
     public void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
@@ -32,6 +29,12 @@ public class CebraSilla : MonoBehaviour
         gameObject.transform.Rotate(0, -90f, 0);
     }
     
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
