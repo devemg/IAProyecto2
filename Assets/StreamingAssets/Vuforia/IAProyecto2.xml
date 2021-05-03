@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="colores" size="3.000000 3.000000" />
+    <ImageTarget name="grietas" size="3.000000 1.998047" />
+    <ImageTarget name="rocks" size="3.000000 2.000000" />
+    <ImageTarget name="rocas2" size="3.000000 2.235566" />
+    <ImageTarget name="rocas-EOS" size="3.000000 2.242500" />
     <ImageTarget name="hojas-peq" size="3.000000 3.000000" />
     <ImageTarget name="hojas-grandes" size="3.000000 3.000000" />
     <ImageTarget name="flores" size="3.000000 3.000000" />
