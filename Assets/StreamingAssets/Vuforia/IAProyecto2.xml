@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="piso_jirafa" size="3.000000 3.000000" />
+    <ImageTarget name="Jirafa" size="3.000000 3.000000" />
     <ImageTarget name="piso_cebra" size="3.000000 3.000000" />
-    <ImageTarget name="piso_victoriano" size="3.000000 3.000000" />
-    <ImageTarget name="rocks" size="3.000000 2.000000" />
-    <ImageTarget name="piso_tiles" size="6.000000 3.978378" />
-    <ImageTarget name="piso_tricolor" size="6.000000 6.000000" />
   </Tracking>
 </QCARConfig>

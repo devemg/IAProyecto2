@@ -7,28 +7,28 @@ public class CebraSofa : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setSE();
+        
     }
 
-   void setNE() {
+   public void setNE() {
         gameObject.transform.Translate(-0.7f, 0, 1.3f);
         gameObject.transform.Rotate(0, 180f, 0);
     }
 
-    void setNO(){
+    public void setNO(){
         gameObject.transform.Translate(0.8f, 0, 1.3f);
         gameObject.transform.Rotate(0, 180f, 0);
     }
 
-    void setSE(){
+    public void setSE(){
         gameObject.transform.Translate(-0.7f, 0, -1.3f);
     }
 
-    void setSO(){
+    public void setSO(){
         gameObject.transform.Translate(0.8f, 0, -1.3f);
     }
 
-    void center(){
+    public void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
 
