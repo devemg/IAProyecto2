@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="20729591" size="3.000000 3.000000" />
+    <ImageTarget name="18514984" size="3.000000 3.000000" />
+    <ImageTarget name="2307" size="3.000000 3.000000" />
+    <ImageTarget name="1-12" size="3.000000 3.000000" />
+    <ImageTarget name="ranita" size="3.000000 2.350909" />
+    <ImageTarget name="hojas" size="3.000000 3.000000" />
+    <ImageTarget name="patron-cactus-dibujado-mano_23-2148081530" size="3.000000 3.000000" />
+    <ImageTarget name="colores" size="3.000000 3.000000" />
+    <ImageTarget name="flores" size="3.000000 3.000000" />
+    <ImageTarget name="rocks" size="3.000000 2.000000" />
+    <ImageTarget name="dibujo4" size="3.000000 3.000000" />
+    <ImageTarget name="dibujo3" size="3.000000 3.000000" />
+    <ImageTarget name="gato" size="3.000000 2.987342" />
+    <ImageTarget name="mandala" size="3.000000 3.000000" />
+    <ImageTarget name="57677c4584c31d65059b17df50b3a63a" size="3.000000 2.140351" />
+    <ImageTarget name="test" size="3.000000 2.359684" />
+    <ImageTarget name="cebra" size="3.000000 3.000000" />
+    <ImageTarget name="dibujo2" size="3.000000 2.350909" />
+    <ImageTarget name="dibujo1" size="3.000000 2.040000" />
+  </Tracking>
+</QCARConfig>
