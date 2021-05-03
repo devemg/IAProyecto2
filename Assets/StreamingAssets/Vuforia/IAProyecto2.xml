@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="hojas-peq" size="3.000000 3.000000" />
+    <ImageTarget name="hojas-grandes" size="3.000000 3.000000" />
+    <ImageTarget name="flores" size="3.000000 3.000000" />
+    <ImageTarget name="corazones" size="3.000000 3.000000" />
+    <ImageTarget name="leopardo" size="3.000000 3.000000" />
     <ImageTarget name="Jirafa" size="3.000000 3.000000" />
     <ImageTarget name="piso_cebra" size="3.000000 3.000000" />
   </Tracking>
