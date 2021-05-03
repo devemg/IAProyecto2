@@ -23,15 +23,15 @@ public class CrearEspacio : MonoBehaviour
            // if(espacioActual.isNotRepeat()) {
           //  Debug.Log("creando...");
                 if(Game.Instance.Espacios.Count < 6) {
-                    Game.Instance.Espacios.Add(espacioActual);
-                    Debug.Log("Creado!");
-                    Debug.Log(Game.Instance.Espacios.Count);
-                    //volver
-                    //o ir a escena de vuforia
+                    if(!Game.Instance.ExistePiso(espacioActual.piso)){
+                        Game.Instance.Espacios.Add(espacioActual);
+                        Debug.Log("Creado!");  
+                    }else{
+                        Debug.Log("El piso ya existe");
+                    }
                 }else {
                     Debug.Log("Ya hay 6 espacios");
                 }
-
            // }else {
            //     Debug.Log("posiciones repetidas");
            // }
