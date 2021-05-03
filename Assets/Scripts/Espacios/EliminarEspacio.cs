@@ -58,6 +58,16 @@ public class EliminarEspacio : MonoBehaviour
         Game.Instance.addLogAction("Piso eliminado");
     }
 
+    void OnDisable()
+    {
+        gameObject.transform.Find("piso1").gameObject.SetActive(false);
+        gameObject.transform.Find("piso2").gameObject.SetActive(false);
+        gameObject.transform.Find("piso3").gameObject.SetActive(false);
+        gameObject.transform.Find("piso4").gameObject.SetActive(false);
+        gameObject.transform.Find("piso5").gameObject.SetActive(false);
+        gameObject.transform.Find("piso6").gameObject.SetActive(false);
+    }
+
     void OnEnable()
     {
         if(Game.Instance.ExistePiso(Piso.PISO1)){

@@ -4907,7 +4907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &735962010
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10683,9 +10683,9 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: 
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: a72b223d3b1cee440b72fc063f2bf5ea, type: 3}
     - m_Text: Piso 1
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 8b2a472053d8c49499c4e42f57da2fec, type: 3}
     - m_Text: Piso 2
       m_Image: {fileID: 0}
     - m_Text: Piso 3
@@ -13070,7 +13070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1875451470
 RectTransform:
   m_ObjectHideFlags: 0
