@@ -40,6 +40,7 @@ public class EditarEspacio : MonoBehaviour
         gameObject.transform.Find("piso4").gameObject.SetActive(false);
         gameObject.transform.Find("piso5").gameObject.SetActive(false);
         gameObject.transform.Find("piso6").gameObject.SetActive(false);
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(false);
     }
 
     void OnEnable()
@@ -62,5 +63,34 @@ public class EditarEspacio : MonoBehaviour
         if(Game.Instance.ExistePiso(Piso.PISO6)){
             gameObject.transform.Find("piso6").gameObject.SetActive(true);
         }
+    }
+
+    public void editarPiso1(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        if(Game.Instance.ExistePiso(Piso.PISO1)){
+            Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO1);
+        }else {
+            Game.Instance.addLogError("No existe el piso para editar.");
+        }
+    }
+
+    public void editarPiso2(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+    }
+
+    public void editarPiso3(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+    }
+
+    public void editarPiso4(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+    }
+
+    public void editarPiso5(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+    }
+
+    public void editarPiso6(){
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 }

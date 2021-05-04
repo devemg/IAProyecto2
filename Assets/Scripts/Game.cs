@@ -7,6 +7,7 @@ public class Game : MonoBehaviour
 
     public static Game Instance; 
     public ArrayList Espacios = new ArrayList();
+    public Espacio EspacioEditable { get; set; }
     List<string> log = new List<string>();
 
     private void Awake(){
