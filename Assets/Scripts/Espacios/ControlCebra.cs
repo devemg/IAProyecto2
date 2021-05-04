@@ -17,6 +17,8 @@ public class ControlCebra : MonoBehaviour
             GetLampara().setPosition(espacio.posLampara);
             GetMesa().setPosition(espacio.posMesa);
             GetSilla().setPosition(espacio.posSilla);
+        }else {
+            gameObject.SetActive(false);
         }
         
     }

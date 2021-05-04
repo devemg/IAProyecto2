@@ -4,31 +4,28 @@ using UnityEngine;
 
 public class Silla : MonoBehaviour
 {
-
     void center(){
         gameObject.transform.Translate(0, 0, 0);
     }
 
     void setNE() {
-         gameObject.transform.Translate(-1.2f, 0, -1.5f);
-        gameObject.transform.Rotate(0, 90f, 0);
+        gameObject.transform.Translate(-1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
     }
 
-    void setNO(){   
-        gameObject.transform.Translate(-1.5f, 0, 1.2f);
-        gameObject.transform.Rotate(0, 90f, 0);
+    void setNO(){
+        gameObject.transform.Translate(1.3f, 0, 1.3f);
+        gameObject.transform.Rotate(0, 180f, 0);
     }
 
     void setSE(){
-        gameObject.transform.Translate(1.5f, 0, -1.2f);
-        gameObject.transform.Rotate(0, -90f, 0);
+        gameObject.transform.Translate(-1.3f, 0, -1.3f);
     }
 
     void setSO(){
-       gameObject.transform.Translate(1.2f, 0, 1.5f);
-        gameObject.transform.Rotate(0, -90f, 0);
+        gameObject.transform.Translate(1.3f, 0, -1.3f);
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {

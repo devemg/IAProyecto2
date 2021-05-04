@@ -20,17 +20,17 @@ public class Game : MonoBehaviour
     void Start()
     {
         Debug.Log("Creando Global...");
-        Espacio cebra = new Espacio();
+        /*Espacio cebra = new Espacio();
         cebra.piso = Piso.CEBRA; 
 
-        cebra.posMesa = EspacioPos.NE;
-        cebra.posPlanta = EspacioPos.NO;
-        cebra.posLampara = EspacioPos.SO;
-        cebra.posSilla = EspacioPos.SE;
-        cebra.posSofa = EspacioPos.CENTER;
+        cebra.posMesa = EspacioPos.NO;
+        cebra.posPlanta = EspacioPos.SO;
+        cebra.posLampara = EspacioPos.NE;
+        cebra.posSilla = EspacioPos.CENTER;
+        cebra.posSofa = EspacioPos.SE;
 
         Espacios.Add(cebra);
-        Debug.Log(Espacios.Count);
+        Debug.Log(Espacios.Count);*/
     }
 
     // Update is called once per frame
