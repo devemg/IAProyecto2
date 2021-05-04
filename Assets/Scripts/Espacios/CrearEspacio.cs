@@ -37,6 +37,7 @@ public class CrearEspacio : MonoBehaviour
            // }
         }else{  
             Debug.Log("no estan todos los elementos");
+            MessageBox.Instance.setMessage("Los elementos no están completos.").Show();
          }
     }
 
