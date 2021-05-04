@@ -67,30 +67,33 @@ public class EditarEspacio : MonoBehaviour
 
     public void editarPiso1(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
-        if(Game.Instance.ExistePiso(Piso.PISO1)){
-            Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO1);
-        }else {
-            Game.Instance.addLogError("No existe el piso para editar.");
-        }
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO1);
+
     }
 
     public void editarPiso2(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO2);
     }
 
     public void editarPiso3(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO3);
+
     }
 
     public void editarPiso4(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO4);
     }
 
     public void editarPiso5(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO5);
     }
 
     public void editarPiso6(){
         gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
+        Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO6);
     }
 }
