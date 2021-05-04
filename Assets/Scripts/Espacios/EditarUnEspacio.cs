@@ -35,7 +35,27 @@ public class EditarUnEspacio : MonoBehaviour
     }
 
     public void editar() {
-        Debug.Log("Editar");
+        if(espacioActual.isNotNull()){
+            if(espacioActual.isNotRepeat()) {
+                if(espacioActual.piso == Game.Instance.EspacioEditable.piso) {
+                    // editar espacio 
+                    Game.Instance.EditarEspacio(espacioActual.piso,espacioActual);
+                    MessageBox.Instance.setMessage("¡Espacio editado!").Show(); 
+                    //espacioActual = CopiarEspacio();
+                    Game.Instance.addLogAction("Se ha editado un espacio");
+
+                }else {
+                    MessageBox.Instance.setError("El piso no coincide").Show();
+                    Game.Instance.addLogError("El piso no coincide.");
+                }
+            }else {
+                MessageBox.Instance.setError("No se pueden repetir espacios y muebles").Show();
+                Game.Instance.addLogError("No se pueden repetir espacios y muebles.");
+            }
+        }else{  
+            MessageBox.Instance.setError("Los elementos no están completos.").Show();
+            Game.Instance.addLogError("No se puede crear el espacio, los elementos no están completos");
+        }
     }
 
      public void setPiso(int indice){
