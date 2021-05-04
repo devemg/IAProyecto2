@@ -28,17 +28,17 @@ public class CrearEspacio : MonoBehaviour
                         MessageBox.Instance.setMessage("¡Espacio creado!").Show(); 
                         Debug.Log(Game.Instance.Espacios.Count); 
                     }else{
-                        MessageBox.Instance.setMessage("El piso ya existe.").Show();
+                        MessageBox.Instance.setError("El piso ya existe.").Show();
                     }
                 }else {
-                    MessageBox.Instance.setMessage("Ya existen 6 espacios").Show();
+                    MessageBox.Instance.setError("Ya existen 6 espacios").Show();
                 }
            // }else {
            //     Debug.Log("posiciones repetidas");
            // }
         }else{  
-            MessageBox.Instance.setMessage("Los elementos no están completos.").Show();
-         }
+            MessageBox.Instance.setError("Los elementos no están completos.").Show();
+        }
     }
 
     public void setPiso(int indice){
