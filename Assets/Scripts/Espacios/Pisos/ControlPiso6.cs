@@ -19,6 +19,7 @@ public class ControlPiso6 : MonoBehaviour
             GetSilla().setPosition(espacio.posSilla);
         }else {
             gameObject.SetActive(false);
+            Debug.LogWarning("NO EXISTE PISO 6");
         }
         
     }
@@ -29,28 +30,28 @@ public class ControlPiso6 : MonoBehaviour
         
     }
     public Mesa GetMesa() {
-        GameObject mesa = GameObject.Find("mesa");
+        GameObject mesa = GameObject.Find("mesa6");
         return (Mesa) mesa.GetComponent(typeof(Mesa));
     }
 
     public Silla GetSilla() {
-        GameObject silla = GameObject.Find("silla");
+        GameObject silla = GameObject.Find("silla6");
         return (Silla) silla.GetComponent(typeof(Silla));
     }
 
     public Lampara GetLampara(){
-        GameObject lamp = GameObject.Find("lampara");
+        GameObject lamp = GameObject.Find("lampara6");
         return (Lampara) lamp.GetComponent(typeof(Lampara));
     }
 
     public Sofa GetSofa(){
-        GameObject sillon = GameObject.Find("sofa");
+        GameObject sillon = GameObject.Find("sofa6");
         return (Sofa) sillon.GetComponent(typeof(Sofa));
         
     }
 
     public Planta GetPlanta() {
-        GameObject planta = GameObject.Find("planta");
+        GameObject planta = GameObject.Find("planta6");
         return (Planta) planta.GetComponent(typeof(Planta));
     }
 }
