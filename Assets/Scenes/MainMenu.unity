@@ -2612,7 +2612,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1533520663}
         m_TargetAssemblyTypeName: EditarUnEspacio, Assembly-CSharp
         m_MethodName: setMesa
         m_Mode: 0
@@ -5136,7 +5136,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1533520663}
         m_TargetAssemblyTypeName: EditarUnEspacio, Assembly-CSharp
         m_MethodName: setSofa
         m_Mode: 0
@@ -18745,7 +18745,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1533520663}
         m_TargetAssemblyTypeName: EditarUnEspacio, Assembly-CSharp
         m_MethodName: setLampara
         m_Mode: 0
@@ -22390,7 +22390,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1533520663}
         m_TargetAssemblyTypeName: EditarUnEspacio, Assembly-CSharp
         m_MethodName: setPlanta
         m_Mode: 0
@@ -23398,7 +23398,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1533520663}
         m_TargetAssemblyTypeName: EditarUnEspacio, Assembly-CSharp
         m_MethodName: setSilla
         m_Mode: 0

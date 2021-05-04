@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class EditarUnEspacio : MonoBehaviour
 {
-    Espacio espacioActual;
+    Espacio espacioActual = new Espacio();
     [SerializeField] Text Desc;
     // Start is called before the first frame update
     void Start()
     {
+        initial();
     }
 
     // Update is called once per frame
@@ -19,15 +20,18 @@ public class EditarUnEspacio : MonoBehaviour
     }
 
     void OnEnable() {
-        espacioActual = Game.Instance.EspacioEditable;
-        string str_espacio = "Piso: "+espacioActual.piso+
-        "\nSofá: "+espacioActual.posSofa+
-        "\nLampara: "+espacioActual.posLampara+
-        "\nPlanta: "+espacioActual.posPlanta+
-        "\nMesa: "+espacioActual.posMesa+
-        "\nSilla: "+espacioActual.posSilla;
+        initial();
+    }
+
+    void initial(){
+        Espacio aEspacio = Game.Instance.EspacioEditable;
+        string str_espacio = "Piso: "+aEspacio.piso+
+        "\nSofá: "+aEspacio.posSofa+
+        "\nLampara: "+aEspacio.posLampara+
+        "\nPlanta: "+aEspacio.posPlanta+
+        "\nMesa: "+aEspacio.posMesa+
+        "\nSilla: "+aEspacio.posSilla;
         Desc.text = str_espacio;
-        //Debug.LogWarning(espacioActual.piso);
     }
 
     public void editar() {

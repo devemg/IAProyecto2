@@ -66,34 +66,32 @@ public class EditarEspacio : MonoBehaviour
     }
 
     public void editarPiso1(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO1);
-
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 
     public void editarPiso2(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO2);
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 
     public void editarPiso3(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO3);
-
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 
     public void editarPiso4(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO4);
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 
     public void editarPiso5(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO5);
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 
     public void editarPiso6(){
-        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
         Game.Instance.EspacioEditable =  Game.Instance.getEspacio(Piso.PISO6);
+        gameObject.transform.Find("EditarUnEspacio").gameObject.SetActive(true);
     }
 }
