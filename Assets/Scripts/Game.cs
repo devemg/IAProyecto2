@@ -22,7 +22,13 @@ public class Game : MonoBehaviour
         Debug.Log("Creando Global...");
         Espacio cebra = new Espacio();
         cebra.piso = Piso.CEBRA; 
-        cebra.posPlanta = EspacioPos.NE;
+
+        cebra.posMesa = EspacioPos.NE;
+        cebra.posPlanta = EspacioPos.NO;
+        cebra.posLampara = EspacioPos.SO;
+        cebra.posSilla = EspacioPos.SE;
+        cebra.posSofa = EspacioPos.CENTER;
+
         Espacios.Add(cebra);
         Debug.Log(Espacios.Count);
     }

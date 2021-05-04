@@ -11,13 +11,12 @@ public class ControlCebra : MonoBehaviour
         
         if(Game.Instance.ExistePiso(Piso.CEBRA)){
             Espacio espacio = Game.Instance.getEspacio(Piso.CEBRA);
+            // posicionando objetos
             GetPlanta().setPosition(espacio.posPlanta);
-        
-            //GetPlanta().setPosition(espacio.)
-           /* GetMesa().center();
-            GetSilla().setSO();
-            GetLampara().setNO();
-            GetSofa().setNE();*/
+            GetSofa().setPosition(espacio.posSofa);
+            GetLampara().setPosition(espacio.posLampara);
+            GetMesa().setPosition(espacio.posMesa);
+            GetSilla().setPosition(espacio.posSilla);
         }
         
     }
