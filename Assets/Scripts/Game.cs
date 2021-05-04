@@ -24,6 +24,7 @@ public class Game : MonoBehaviour
         AddEspacio(Piso.PISO1);
         AddEspacio(Piso.PISO2);
         AddEspacio(Piso.PISO3);
+        AddEspacio(Piso.PISO4);
     }
 
     // Update is called once per frame
