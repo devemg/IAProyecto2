@@ -8,14 +8,17 @@ public class ControlCebra : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetPlanta().show();
-        GetPlanta().setSE();
-
         
-        GetMesa().center();
-        GetSilla().setSO();
-        GetLampara().setNO();
-        GetSofa().setNE();
+        if(Game.Instance.ExistePiso(Piso.CEBRA)){
+            Espacio espacio = Game.Instance.getEspacio(Piso.CEBRA);
+            GetPlanta().setPosition(espacio.posPlanta);
+        
+            //GetPlanta().setPosition(espacio.)
+           /* GetMesa().center();
+            GetSilla().setSO();
+            GetLampara().setNO();
+            GetSofa().setNE();*/
+        }
         
     }
 

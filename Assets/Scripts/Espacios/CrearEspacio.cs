@@ -25,18 +25,18 @@ public class CrearEspacio : MonoBehaviour
                 if(Game.Instance.Espacios.Count < 6) {
                     if(!Game.Instance.ExistePiso(espacioActual.piso)){
                         Game.Instance.Espacios.Add(espacioActual);
-                        Debug.Log("Creado!");  
+                        MessageBox.Instance.setMessage("¡Espacio creado!").Show(); 
+                        Debug.Log(Game.Instance.Espacios.Count); 
                     }else{
-                        Debug.Log("El piso ya existe");
+                        MessageBox.Instance.setMessage("El piso ya existe.").Show();
                     }
                 }else {
-                    Debug.Log("Ya hay 6 espacios");
+                    MessageBox.Instance.setMessage("Ya existen 6 espacios").Show();
                 }
            // }else {
            //     Debug.Log("posiciones repetidas");
            // }
         }else{  
-            Debug.Log("no estan todos los elementos");
             MessageBox.Instance.setMessage("Los elementos no están completos.").Show();
          }
     }
@@ -48,23 +48,23 @@ public class CrearEspacio : MonoBehaviour
     }
 
     public void setSofa(int indice){
-        espacioActual.setSofa(GetPos(indice));
+        espacioActual.posSofa = GetPos(indice);
     }
 
     public void setLampara(int indice){
-        espacioActual.setLampara(GetPos(indice));
+        espacioActual.posLampara = GetPos(indice);
     }
 
     public void setPlanta(int indice){
-        espacioActual.setPlanta(GetPos(indice));
+        espacioActual.posPlanta = GetPos(indice);
     }
 
     public void setMesa(int indice){
-        espacioActual.setMesa(GetPos(indice));
+        espacioActual.posMesa = GetPos(indice);
     }
 
     public void setSilla(int indice){
-        espacioActual.setSilla(GetPos(indice));
+        espacioActual.posSilla = GetPos(indice);
     }
 
     EspacioPos GetPos(int indice) {
@@ -79,6 +79,7 @@ public class CrearEspacio : MonoBehaviour
     }
 
     Piso GetPiso(int indice){
+        Debug.Log(indice);
         switch(indice) {
             case 1: return Piso.CEBRA;
             case 2: return Piso.JIRAFA;

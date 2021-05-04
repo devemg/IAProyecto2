@@ -19,36 +19,21 @@ public enum Piso {
 }
 public class Espacio
 {
-    EspacioPos posMesa = EspacioPos.NULL; 
-    EspacioPos posSilla = EspacioPos.NULL; 
-    EspacioPos posPlanta = EspacioPos.NULL; 
-    EspacioPos posLampara = EspacioPos.NULL; 
-    EspacioPos posSofa = EspacioPos.NULL; 
+    public EspacioPos posMesa { get; set; }
+    public EspacioPos posSilla { get; set; } 
+    public EspacioPos posPlanta { get; set; }
+    public EspacioPos posLampara { get; set; }
+    public EspacioPos posSofa { get; set; }
 
     public Piso piso { get; set; }
     int error = 0;
     public Espacio() {
         piso = Piso.NULL;
-    }
-
-    public void setSofa(EspacioPos indice){
-        posSofa = indice;
-    }
-
-    public void setLampara(EspacioPos indice){
-        posLampara = indice;
-    }
-
-    public void setPlanta(EspacioPos indice){
-        posPlanta = indice;
-    }
-
-    public void setMesa(EspacioPos indice){
-        posMesa = indice;
-    }
-
-    public void setSilla(EspacioPos indice){
-        posSilla = indice;
+        posSofa  = EspacioPos.NULL; 
+        posLampara  = EspacioPos.NULL; 
+        posPlanta  = EspacioPos.NULL; 
+        posSilla  = EspacioPos.NULL; 
+        posMesa  = EspacioPos.NULL; 
     }
 
     public bool isNotNull(){

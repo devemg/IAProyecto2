@@ -20,6 +20,10 @@ public class Game : MonoBehaviour
     void Start()
     {
         Debug.Log("Creando Global...");
+        Espacio cebra = new Espacio();
+        cebra.piso = Piso.CEBRA; 
+        cebra.posPlanta = EspacioPos.NE;
+        Espacios.Add(cebra);
         Debug.Log(Espacios.Count);
     }
 
@@ -61,6 +65,15 @@ public class Game : MonoBehaviour
         if(existe){
             Espacios[index] = eEspacio;
         }
+    }
+
+    public Espacio getEspacio(Piso piso) {
+        foreach(Espacio espacio in Espacios){
+            if(espacio.piso.Equals(piso)){
+                return espacio;
+            }
+        }
+        return null;
     }
 
 }
