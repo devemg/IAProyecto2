@@ -9,7 +9,7 @@ public class ControlPiso2 : MonoBehaviour
     void Start()
     {
         
-      //  if(Game.Instance.ExistePiso(Piso.PISO2)){
+        if(Game.Instance.ExistePiso(Piso.PISO2)){
             Espacio espacio = Game.Instance.getEspacio(Piso.PISO2);
             // posicionando objetos
             GetPlanta().setPosition(espacio.posPlanta);
@@ -17,10 +17,10 @@ public class ControlPiso2 : MonoBehaviour
             GetLampara().setPosition(espacio.posLampara);
             GetMesa().setPosition(espacio.posMesa);
             GetSilla().setPosition(espacio.posSilla);
-      //  }else {
-      //      Debug.LogError("NO EXISTE PISO 2");
-           // gameObject.SetActive(false);
-     //   }
+        } else {
+            Debug.LogWarning("NO EXISTE PISO 2");
+            gameObject.SetActive(false);
+       }
         
     }
 

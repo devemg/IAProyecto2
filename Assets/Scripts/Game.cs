@@ -21,24 +21,9 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Espacio nespacio = new Espacio();
-        nespacio.piso = Piso.PISO1; 
-        nespacio.posLampara = EspacioPos.NO;
-        nespacio.posMesa = EspacioPos.NE; 
-        nespacio.posPlanta =  EspacioPos.SO;
-        nespacio.posSilla = EspacioPos.SE; 
-        nespacio.posSofa = EspacioPos.CENTER; 
-        Game.Instance.Espacios.Add(nespacio);
-        Debug.Log(Espacios.Count);
-        Espacio enespacio = new Espacio();
-        enespacio.piso = Piso.PISO2; 
-        enespacio.posLampara = EspacioPos.CENTER;
-        enespacio.posMesa = EspacioPos.SE; 
-        enespacio.posPlanta =  EspacioPos.NE;
-        enespacio.posSilla = EspacioPos.NO; 
-        enespacio.posSofa = EspacioPos.SO; 
-        Game.Instance.Espacios.Add(enespacio);
-        Debug.Log(Espacios.Count);
+        AddEspacio(Piso.PISO1);
+        AddEspacio(Piso.PISO2);
+        AddEspacio(Piso.PISO3);
     }
 
     // Update is called once per frame
@@ -98,6 +83,17 @@ public class Game : MonoBehaviour
         log.Add("[ERROR] "+content);
     }
 
+    public void AddEspacio(Piso piso){
+        Espacio nespacio = new Espacio();
+        nespacio.piso = piso; 
+        nespacio.posLampara = EspacioPos.NO;
+        nespacio.posMesa = EspacioPos.NE; 
+        nespacio.posPlanta =  EspacioPos.SO;
+        nespacio.posSilla = EspacioPos.SE; 
+        nespacio.posSofa = EspacioPos.CENTER; 
+        Game.Instance.Espacios.Add(nespacio);
+        Debug.Log(Espacios.Count);
+    }
     public void genLog(string path){
         //StreamReader Leer;
         //StreamWriter Escribir;
