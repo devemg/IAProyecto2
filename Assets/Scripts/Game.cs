@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class Game : MonoBehaviour
 {
@@ -22,12 +23,12 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AddEspacio(Piso.PISO1);
-        AddEspacio(Piso.PISO2);
-        AddEspacio(Piso.PISO3);
-        AddEspacio(Piso.PISO4);
-        AddEspacio(Piso.PISO5);
-        AddEspacio(Piso.PISO6);
+        //AddEspacio(Piso.PISO1);
+        //AddEspacio(Piso.PISO2);
+        //AddEspacio(Piso.PISO3);
+       // AddEspacio(Piso.PISO4);
+       // AddEspacio(Piso.PISO5);
+       // AddEspacio(Piso.PISO6);
     }
 
     // Update is called once per frame
@@ -98,9 +99,13 @@ public class Game : MonoBehaviour
         Game.Instance.Espacios.Add(nespacio);
         Debug.Log(Espacios.Count);
     }
-    public void genLog(string path){
-        //StreamReader Leer;
-        //StreamWriter Escribir;
+    public void genLog(){
+        StreamWriter sw = new StreamWriter("bitacora_201610649.txt", false);
+        foreach(string line in log){
+            sw.Write(line);
+            sw.Write("\n");
+        }
+        sw.Close();
     }
 
 }

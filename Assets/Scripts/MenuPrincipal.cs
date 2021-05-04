@@ -18,11 +18,13 @@ public class MenuPrincipal : MonoBehaviour
     }
 
     public void salir(){
+        Game.Instance.genLog();
         Application.Quit();
     }
 
     public void GoToVR(){
         SceneManager.LoadScene("Spaces");
+        Game.Instance.addLogAction("Se visualizaron los espacios.");
     }
 
     public void BackMenu(){
