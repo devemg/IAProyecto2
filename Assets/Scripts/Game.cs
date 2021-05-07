@@ -23,7 +23,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AddEspacio(Piso.PISO1);
+        //AddEspacio(Piso.PISO1);
         //AddEspacio(Piso.PISO2);
         //AddEspacio(Piso.PISO3);
         //AddEspacio(Piso.PISO4);
