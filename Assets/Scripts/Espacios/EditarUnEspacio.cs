@@ -41,12 +41,18 @@ public class EditarUnEspacio : MonoBehaviour
                     // editar espacio 
                     Game.Instance.EditarEspacio(espacioActual.piso,espacioActual);
                     MessageBox.Instance.setMessage("¡Espacio editado!").Show(); 
-                    //espacioActual = CopiarEspacio();
                     Game.Instance.addLogAction("Se ha editado un espacio");
-
                 }else {
-                    MessageBox.Instance.setError("El piso no coincide").Show();
-                    Game.Instance.addLogError("El piso no coincide.");
+                    if(!Game.Instance.ExistePiso(espacioActual.piso)){
+                        // editar espacio 
+                        Game.Instance.EliminarEspacio(Game.Instance.EspacioEditable.piso);
+                        Game.Instance.Espacios.Add(espacioActual);
+                        MessageBox.Instance.setMessage("¡Espacio editado!").Show(); 
+                        Game.Instance.addLogAction("Se ha editado un espacio");
+                    }else {
+                        MessageBox.Instance.setError("El piso ya existe").Show();
+                        Game.Instance.addLogError("El piso ya existe.");
+                    }
                 }
             }else {
                 MessageBox.Instance.setError("No se pueden repetir espacios y muebles").Show();

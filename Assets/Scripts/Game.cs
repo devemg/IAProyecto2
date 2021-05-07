@@ -24,11 +24,11 @@ public class Game : MonoBehaviour
     void Start()
     {
         AddEspacio(Piso.PISO1);
-        AddEspacio(Piso.PISO2);
-        AddEspacio(Piso.PISO3);
-        AddEspacio(Piso.PISO4);
-        AddEspacio(Piso.PISO5);
-        AddEspacio(Piso.PISO6);
+        //AddEspacio(Piso.PISO2);
+        //AddEspacio(Piso.PISO3);
+        //AddEspacio(Piso.PISO4);
+        //AddEspacio(Piso.PISO5);
+        //AddEspacio(Piso.PISO6);
     }
 
     // Update is called once per frame
