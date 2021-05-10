@@ -1,1 +1,10 @@
+[ERROR] No se pueden repetir espacios y muebles.
 [ACCION] Se ha creado un espacio
+[ERROR] No se puede crear el espacio, el piso ya existe
+[ERROR] No se puede crear el espacio, los elementos no están completos
+[ACCION] Se ha creado un espacio
+[ACCION] Se visualizaron los espacios.
+[ACCION] Se ha editado un espacio
+[ACCION] Se visualizaron los espacios.
+[ACCION] Piso eliminado
+[ACCION] Se visualizaron los espacios.
